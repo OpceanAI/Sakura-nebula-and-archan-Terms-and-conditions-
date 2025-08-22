@@ -3,9 +3,10 @@ export interface Props {
   title: string;
   description: string;
   lang: string;
+  bodyClass?: string;
 }
 
-const { title, description, lang } = Astro.props;
+const { title, description, lang, bodyClass } = Astro.props;
 ---
 
 <!DOCTYPE html>
@@ -58,7 +59,7 @@ const { title, description, lang } = Astro.props;
   }
   </script>
 </head>
-<body>
+<body class={bodyClass}>
   <slot />
   
   <!-- Language Switcher Script -->
