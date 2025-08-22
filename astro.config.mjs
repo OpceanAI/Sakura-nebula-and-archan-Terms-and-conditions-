@@ -9,6 +9,13 @@ export default defineConfig({
   },
   compressHTML: true,
   vite: {
+    server: {
+      host: '0.0.0.0',
+      port: 5000,
+      hmr: {
+        port: 5000
+      }
+    },
     build: {
       rollupOptions: {
         output: {
