@@ -1,0 +1,191 @@
+---
+export interface Props {
+  name: string;
+  icon: string;
+  personality: string;
+  description: string;
+  features: string[];
+  tech: string;
+}
+
+const { name, icon, personality, description, features, tech } = Astro.props;
+---
+
+<div class="bot-card" data-bot={name.toLowerCase().replace(/\s+/g, '-')}>
+  <div class="bot-header">
+    <div class="bot-icon">{icon}</div>
+    <div class="bot-title">
+      <h3>{name}</h3>
+      <span class="bot-personality">{personality}</span>
+    </div>
+  </div>
+  
+  <div class="bot-content">
+    <p class="bot-description">{description}</p>
+    
+    <div class="bot-features">
+      <h4>Características principales:</h4>
+      <ul>
+        {features.map(feature => (
+          <li>{feature}</li>
+        ))}
+      </ul>
+    </div>
+    
+    <div class="bot-tech">
+      <h4>Tecnología:</h4>
+      <p>{tech}</p>
+    </div>
+  </div>
+</div>
+
+<style>
+.bot-card {
+  background: var(--gradient-soft);
+  border: 2px solid var(--border-soft);
+  border-radius: 16px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.bot-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--gradient-primary);
+  border-radius: 16px 16px 0 0;
+}
+
+.bot-card[data-bot="archan-js-bot"]::before {
+  background: linear-gradient(90deg, var(--archan-blue), var(--archan-purple));
+}
+
+.bot-card[data-bot="nebula-bot"]::before {
+  background: linear-gradient(90deg, var(--nebula-purple), var(--nebula-blue));
+}
+
+.bot-card[data-bot="sakura-ia-bot"]::before {
+  background: linear-gradient(90deg, var(--sakura-pink), var(--sakura-coral));
+}
+
+.bot-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(255, 182, 193, 0.2);
+  border-color: var(--sakura-pink);
+}
+
+.bot-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.bot-icon {
+  font-size: 2.5rem;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.bot-title h3 {
+  margin: 0 0 0.25rem 0;
+  color: var(--text-primary);
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.bot-personality {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.bot-description {
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.bot-features, .bot-tech {
+  margin-bottom: 1.5rem;
+}
+
+.bot-features h4, .bot-tech h4 {
+  color: var(--text-primary);
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.bot-features h4::before {
+  content: '✨';
+  font-size: 0.9rem;
+}
+
+.bot-tech h4::before {
+  content: '⚙️';
+  font-size: 0.9rem;
+}
+
+.bot-features ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.bot-features li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.bot-features li::before {
+  content: '🌸';
+  position: absolute;
+  left: 0;
+  font-size: 0.8rem;
+}
+
+.bot-tech p {
+  color: var(--text-secondary);
+  font-family: 'Monaco', 'Menlo', monospace;
+  font-size: 0.85rem;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 0.5rem;
+  border-radius: 6px;
+  border-left: 3px solid var(--sakura-pink);
+}
+
+@media (max-width: 768px) {
+  .bot-card {
+    padding: 1rem;
+  }
+  
+  .bot-header {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+  
+  .bot-icon {
+    font-size: 2rem;
+  }
+  
+  .bot-title h3 {
+    font-size: 1.2rem;
+  }
+}
+</style>

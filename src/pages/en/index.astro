@@ -1,0 +1,390 @@
+---
+import LegalLayout from '../../layouts/LegalLayout.astro';
+import LanguageSwitcher from '../../components/LanguageSwitcher.astro';
+import BotSection from '../../components/BotSection.astro';
+import LegalSection from '../../components/LegalSection.astro';
+
+const currentLang = 'en';
+---
+
+<LegalLayout 
+  title="Terms and Conditions - Proyecto Sakura IA" 
+  description="Official Terms and Conditions for the Proyecto Sakura IA Discord bot ecosystem, including ARCHAN JS BOT, NEBULA BOT, and SAKURA IA BOT."
+  lang={currentLang}
+>
+  <header class="header">
+    <div class="container">
+      <div class="header-content">
+        <h1 class="main-title">
+          <span class="sakura-icon">🌸</span>
+          Proyecto Sakura IA
+          <span class="subtitle">Terms and Conditions</span>
+        </h1>
+        <LanguageSwitcher currentLang={currentLang} />
+      </div>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <div class="container">
+      <!-- Introduction Section -->
+      <LegalSection 
+        title="1. Introduction and Acceptance"
+        id="introduction"
+      >
+        <p>Welcome to <strong>Proyecto Sakura IA</strong>, an advanced Discord bot ecosystem designed to provide intelligent and charming experiences through three specialized bots with unique kawaii personalities.</p>
+        
+        <p>By using any of our services, including ARCHAN JS BOT, NEBULA BOT, and SAKURA IA BOT, you agree to be bound by these Terms and Conditions. If you do not agree with any part of these terms, you should not use our services.</p>
+        
+        <p><strong>Last updated:</strong> August 22, 2025</p>
+      </LegalSection>
+
+      <!-- Bot Descriptions -->
+      <LegalSection 
+        title="2. Service Description"
+        id="services"
+      >
+        <div class="bots-grid">
+          <BotSection 
+            name="ARCHAN JS BOT" 
+            icon="🔮💻"
+            personality="Kawaii Programming Assistant"
+            description="Specialized bot for technical assistance with adorable kawaii personality"
+            features={[
+              "AI ensemble system with multiple providers (Gemini 2.5, DeepSeek R1, OpenAI)",
+              "22+ commands with consistent kawaii programming personality",
+              "Multimodal capabilities: image and document analysis",
+              "Moderation system with 'kawaii algorithms'",
+              "Customizable level and reward system"
+            ]}
+            tech="Node.js (TypeScript), PostgreSQL, Redis, Pinecone"
+          />
+
+          <BotSection 
+            name="NEBULA BOT" 
+            icon="🌙✨"
+            personality="Primary Multi-Function Bot"
+            description="Main operational bot with advanced functionalities and shy kawaii style"
+            features={[
+              "Music system with optimized European Lavalink nodes",
+              "YouTube, Spotify, and SoundCloud integration",
+              "Intelligent automoderation system",
+              "Advanced role management and server activity tracking",
+              "Integrated ticket system and welcome/farewell messages"
+            ]}
+            tech="Node.js (TypeScript), MongoDB, Discord OAuth2"
+          />
+
+          <BotSection 
+            name="SAKURA IA BOT" 
+            icon="🌸✨💖"
+            personality="Advanced AI Specialist"
+            description="Extremely shy and adorable AI bot with advanced multimodal capabilities"
+            features={[
+              "Comprehensive multimodal analysis (text, image, audio)",
+              "Vision system with Gemini Vision for image analysis",
+              "Real-time audio processing and transcription",
+              "Multiple FREE AI providers without OpenAI/Anthropic dependencies",
+              "US-optimized Lavalink nodes"
+            ]}
+            tech="Python, Multiple AI providers, Multimodal analysis"
+          />
+        </div>
+      </LegalSection>
+
+      <!-- User Obligations -->
+      <LegalSection 
+        title="3. User Obligations"
+        id="user-obligations"
+      >
+        <h3>3.1 Appropriate Use</h3>
+        <ul>
+          <li>You must use the services responsibly and respectfully</li>
+          <li>You must not attempt to bypass rate limiting or moderation systems</li>
+          <li>You must respect Discord's Terms of Service at all times</li>
+          <li>You must not use the bots for illegal activities, spam, or harassment</li>
+        </ul>
+
+        <h3>3.2 User Content</h3>
+        <ul>
+          <li>You are responsible for all content you share with our bots</li>
+          <li>You must not submit content that infringes copyright or intellectual property</li>
+          <li>Explicit, violent, or discriminatory content is prohibited</li>
+          <li>Word filtering systems may activate automatically</li>
+        </ul>
+
+        <h3>3.3 AI Interaction</h3>
+        <ul>
+          <li>AI responses are automatically generated and may contain inaccuracies</li>
+          <li>You should not rely on AI responses for critical or medical decisions</li>
+          <li>Multimodal analysis is provided "as is" without warranties</li>
+        </ul>
+      </LegalSection>
+
+      <!-- Privacy Policy -->
+      <LegalSection 
+        title="4. Privacy Policy and Data"
+        id="privacy"
+      >
+        <h3>4.1 Data Collection</h3>
+        <p>We collect and process the following types of data:</p>
+        <ul>
+          <li><strong>Discord Data:</strong> User ID, username, server information</li>
+          <li><strong>Message Content:</strong> Text, images, and audio sent to our bots</li>
+          <li><strong>Interaction Data:</strong> Commands used, usage frequency, configurations</li>
+          <li><strong>Voice Data:</strong> Audio processed for transcription (SAKURA IA BOT)</li>
+          <li><strong>System Metrics:</strong> Server activity logs, performance statistics</li>
+        </ul>
+
+        <h3>4.2 Data Storage</h3>
+        <ul>
+          <li><strong>PostgreSQL:</strong> Primary user data and configurations</li>
+          <li><strong>Redis:</strong> Temporary cache data and sessions</li>
+          <li><strong>Pinecone:</strong> AI vectors for content analysis</li>
+          <li><strong>SQLite:</strong> Local functions and temporary data</li>
+          <li><strong>MongoDB:</strong> NEBULA BOT operational data</li>
+        </ul>
+
+        <h3>4.3 Geographic Location</h3>
+        <ul>
+          <li>European servers for ARCHAN JS BOT and NEBULA BOT</li>
+          <li>US servers for SAKURA IA BOT</li>
+          <li>Geographic optimization to reduce latency</li>
+        </ul>
+
+        <h3>4.4 Third-Party Data Sharing</h3>
+        <p>Your data may be processed by the following AI providers:</p>
+        <ul>
+          <li><strong>Google (Gemini):</strong> For AI processing and multimodal analysis</li>
+          <li><strong>DeepSeek:</strong> For advanced AI reasoning</li>
+          <li><strong>OpenAI:</strong> As AI backup system</li>
+          <li><strong>Cloudflare AI:</strong> For additional AI processing</li>
+        </ul>
+      </LegalSection>
+
+      <!-- AI Usage Policy -->
+      <LegalSection 
+        title="5. Artificial Intelligence Usage Policy"
+        id="ai-policy"
+      >
+        <h3>5.1 Ensemble System</h3>
+        <p>Our bots use an ensemble AI system with multiple provider levels:</p>
+        <ul>
+          <li><strong>Level 0:</strong> Gemini 2.5 Flash (Primary provider)</li>
+          <li><strong>Level 0.5:</strong> Gemini 2.5 Pro (Advanced reasoning)</li>
+          <li><strong>Level 0.9:</strong> Gemini 1.5 Pro (Legacy compatibility)</li>
+          <li><strong>Level 1:</strong> DeepSeek R1 (Advanced reasoning via OpenRouter)</li>
+          <li><strong>Level 2:</strong> OpenAI (Reliable backup)</li>
+          <li><strong>Level 3:</strong> Enhanced kawaii programming responses</li>
+        </ul>
+
+        <h3>5.2 AI Limitations</h3>
+        <ul>
+          <li>Responses are limited to 2000 characters due to Discord restrictions</li>
+          <li>Cooldown systems: AI (30s), Social (10s) per user</li>
+          <li>Administrators can override cooldown limitations</li>
+          <li>Intelligent truncation is applied automatically</li>
+        </ul>
+
+        <h3>5.3 Multimodal Capabilities</h3>
+        <ul>
+          <li><strong>Image Analysis:</strong> General description, detailed analysis, OCR</li>
+          <li><strong>Audio Processing:</strong> Speech recognition and transcription</li>
+          <li><strong>Content Assembly:</strong> Intelligent combination of multimodal inputs</li>
+          <li><strong>Content Detection:</strong> Automatic content type identification</li>
+        </ul>
+      </LegalSection>
+
+      <!-- Music Licensing -->
+      <LegalSection 
+        title="6. Music Licensing and Multimedia Content"
+        id="music-licensing"
+      >
+        <h3>6.1 Music Sources</h3>
+        <p>Our bots access music through:</p>
+        <ul>
+          <li><strong>YouTube:</strong> Public content available on the platform</li>
+          <li><strong>Spotify:</strong> Integration for search and metadata</li>
+          <li><strong>SoundCloud:</strong> Public content and Creative Commons licensed</li>
+        </ul>
+
+        <h3>6.2 Lavalink Infrastructure</h3>
+        <p><strong>European Nodes (NEBULA BOT):</strong></p>
+        <ul>
+          <li>Luke.gg</li>
+          <li>AjieDev V4/All</li>
+          <li>Pericsq Romania</li>
+          <li>Embotic France</li>
+        </ul>
+
+        <p><strong>US Nodes (SAKURA IA BOT):</strong></p>
+        <ul>
+          <li>Alfari US</li>
+          <li>TechByte Chicago</li>
+          <li>Embotic US</li>
+          <li>Mushroom US</li>
+          <li>Micium US</li>
+        </ul>
+
+        <h3>6.3 Copyright Compliance</h3>
+        <ul>
+          <li>We respect DMCA policies and international copyright laws</li>
+          <li>We do not store or redistribute copyrighted content</li>
+          <li>We process content removal requests promptly</li>
+          <li>Users are responsible for license compliance on their servers</li>
+        </ul>
+      </LegalSection>
+
+      <!-- Moderation Policies -->
+      <LegalSection 
+        title="7. Moderation Policies"
+        id="moderation"
+      >
+        <h3>7.1 Automoderation Systems</h3>
+        <ul>
+          <li><strong>Intelligent Filtering:</strong> Automatic detection of inappropriate content</li>
+          <li><strong>Kawaii Algorithms:</strong> Moderation with charming but effective messages</li>
+          <li><strong>Customizable Filters:</strong> Administrators can add/remove banned words</li>
+          <li><strong>Role Management:</strong> Advanced permission system and hierarchies</li>
+        </ul>
+
+        <h3>7.2 Moderation Actions</h3>
+        <p>The bots can perform the following actions:</p>
+        <ul>
+          <li><strong>Warnings:</strong> Automatic notifications for minor infractions</li>
+          <li><strong>Timeouts:</strong> Temporary suspension of privileges</li>
+          <li><strong>Kicks:</strong> Temporary expulsion from server</li>
+          <li><strong>Bans:</strong> Permanent server prohibition</li>
+          <li><strong>Message Cleanup:</strong> Mass removal of inappropriate content</li>
+        </ul>
+
+        <h3>7.3 Ticket System</h3>
+        <ul>
+          <li>Integrated system for user support and moderation workflows</li>
+          <li>Incident tracking and conflict resolution</li>
+          <li>Direct communication between users and administrators</li>
+        </ul>
+      </LegalSection>
+
+      <!-- Service Availability -->
+      <LegalSection 
+        title="8. Service Availability and Performance"
+        id="availability"
+      >
+        <h3>8.1 High Availability</h3>
+        <ul>
+          <li><strong>Multi-Bot Ensemble System:</strong> Three bots working together for maximum availability</li>
+          <li><strong>Backup Systems:</strong> Multiple backup providers and systems</li>
+          <li><strong>Geographic Optimization:</strong> European and US distribution for reduced latency</li>
+          <li><strong>Graceful Degradation:</strong> Error handling with kawaii messages</li>
+        </ul>
+
+        <h3>8.2 Performance Limitations</h3>
+        <ul>
+          <li><strong>Rate Limits:</strong> User-specific cooldowns to prevent abuse</li>
+          <li><strong>Administrative Controls:</strong> Administrators can override limitations</li>
+          <li><strong>Discord Limits:</strong> Responses limited to 2000 characters</li>
+          <li><strong>Resource Management:</strong> Automatic load balancing between providers</li>
+        </ul>
+
+        <h3>8.3 Maintenance</h3>
+        <ul>
+          <li>Scheduled maintenance will be notified in advance</li>
+          <li>Emergency updates may occur without prior notice</li>
+          <li>Downtime will be minimized whenever possible</li>
+        </ul>
+      </LegalSection>
+
+      <!-- Liability and Disclaimers -->
+      <LegalSection 
+        title="9. Limitation of Liability"
+        id="liability"
+      >
+        <h3>9.1 General Disclaimer</h3>
+        <p>Services are provided "as is" without warranties of any kind. We do not guarantee:</p>
+        <ul>
+          <li>Uninterrupted service availability</li>
+          <li>Accuracy of AI responses</li>
+          <li>Integrity of multimodal analyses</li>
+          <li>Continuous availability of music sources</li>
+        </ul>
+
+        <h3>9.2 Specific Limitations</h3>
+        <ul>
+          <li><strong>AI Responses:</strong> Responses are automatically generated and may contain inaccuracies</li>
+          <li><strong>Content Analysis:</strong> Multimodal analyses are provided without accuracy guarantee</li>
+          <li><strong>Moderation:</strong> Automatic moderation systems may generate false positives or negatives</li>
+          <li><strong>Music:</strong> Musical content availability depends on third-party services</li>
+        </ul>
+
+        <h3>9.3 Damage Limitation</h3>
+        <p>We shall not be liable for indirect, incidental, special, or consequential damages resulting from the use of our services.</p>
+      </LegalSection>
+
+      <!-- Updates and Changes -->
+      <LegalSection 
+        title="10. Modifications and Updates"
+        id="updates"
+      >
+        <h3>10.1 Terms Changes</h3>
+        <ul>
+          <li>We reserve the right to modify these terms at any time</li>
+          <li>Significant changes will be notified through our official channels</li>
+          <li>Continued use after changes constitutes acceptance</li>
+          <li>Users may discontinue use if they disagree with changes</li>
+        </ul>
+
+        <h3>10.2 Service Updates</h3>
+        <ul>
+          <li>Functionalities may be added, modified, or removed</li>
+          <li>Bot kawaii personalities may evolve</li>
+          <li>AI providers may change based on availability</li>
+          <li>Music nodes may be updated for better performance</li>
+        </ul>
+      </LegalSection>
+
+      <!-- Contact Information -->
+      <LegalSection 
+        title="11. Contact Information"
+        id="contact"
+      >
+        <div class="contact-info">
+          <h3>11.1 Support and Inquiries</h3>
+          <p>For questions about these terms or issues with our services:</p>
+          <ul>
+            <li><strong>Discord:</strong> Use the integrated ticket system on your server</li>
+            <li><strong>Help Commands:</strong> <code>/ayuda-tecnica</code> on ARCHAN JS BOT</li>
+            <li><strong>General Support:</strong> Mention any of our bots on your server</li>
+          </ul>
+
+          <h3>11.2 Problem Reports</h3>
+          <ul>
+            <li><strong>AI Issues:</strong> Use the <code>/ask</code> command to report incorrect responses</li>
+            <li><strong>Music Issues:</strong> Contact through the ticket system</li>
+            <li><strong>Moderation Issues:</strong> Administrators can adjust settings</li>
+          </ul>
+
+          <h3>11.3 Response Policy</h3>
+          <ul>
+            <li>General inquiries are answered within 48 hours</li>
+            <li>Critical issues are handled with priority</li>
+            <li>Responses are provided in Spanish or English based on preference</li>
+          </ul>
+        </div>
+      </LegalSection>
+
+      <!-- Footer -->
+      <footer class="legal-footer">
+        <div class="footer-content">
+          <p><strong>Proyecto Sakura IA</strong> - Discord Bot Ecosystem with Kawaii Personalities</p>
+          <p>Last updated: August 22, 2025</p>
+          <div class="bot-signatures">
+            <span class="bot-signature archan">ARCHAN JS BOT 🔮💻</span>
+            <span class="bot-signature nebula">NEBULA BOT 🌙✨</span>
+            <span class="bot-signature sakura">SAKURA IA BOT 🌸✨💖</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </main>
+</LegalLayout>

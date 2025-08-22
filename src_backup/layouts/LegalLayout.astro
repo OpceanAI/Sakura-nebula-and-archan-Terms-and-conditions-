@@ -1,0 +1,81 @@
+---
+export interface Props {
+  title: string;
+  description: string;
+  lang: string;
+}
+
+const { title, description, lang } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang={lang}>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{title}</title>
+  <meta name="description" content={description}>
+  
+  <!-- SEO Meta Tags -->
+  <meta property="og:title" content={title}>
+  <meta property="og:description" content={description}>
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Proyecto Sakura IA">
+  
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content={title}>
+  <meta name="twitter:description" content={description}>
+  
+  <!-- Canonical URL -->
+  <link rel="canonical" href={Astro.url.href}>
+  
+  <!-- Alternate Languages -->
+  {lang === 'es' && <link rel="alternate" hreflang="en" href="/en/">}
+  {lang === 'en' && <link rel="alternate" hreflang="es" href="/">}
+  <link rel="alternate" hreflang="x-default" href="/">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  
+  <!-- Preload Critical Resources -->
+  <link rel="preload" href="/src/styles/global.css" as="style">
+  
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "{title}",
+    "description": "{description}",
+    "inLanguage": "{lang}",
+    "about": {
+      "@type": "SoftwareApplication",
+      "name": "Proyecto Sakura IA",
+      "applicationCategory": "DiscordBot",
+      "operatingSystem": "Discord",
+      "description": "Advanced Discord bot ecosystem with kawaii personalities for AI interactions, music, and moderation"
+    }
+  }
+  </script>
+</head>
+<body>
+  <slot />
+  
+  <!-- Language Switcher Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const languageSwitcher = document.querySelector('.language-switcher');
+      if (languageSwitcher) {
+        languageSwitcher.addEventListener('change', function(e) {
+          const selectedLang = e.target.value;
+          if (selectedLang === 'en') {
+            window.location.href = '/en/';
+          } else {
+            window.location.href = '/';
+          }
+        });
+      }
+    });
+  </script>
+</body>
+</html>
