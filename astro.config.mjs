@@ -4,6 +4,9 @@ export default defineConfig({
   site: 'https://terms.proyectosakuraia.com',
   base: '/',
   output: 'static',
+  devToolbar: {
+    enabled: false
+  },
   build: {
     inlineStylesheets: 'auto'
   },
