@@ -274,6 +274,41 @@ const currentLang = 'es';
   </main>
 </LegalLayout>
 
+<style is:global>
+  body.archan-page {
+    background: linear-gradient(135deg, #000000 0%, #000a33 50%, #1a2d69 100%) !important;
+    color: white !important;
+    overflow-x: hidden !important;
+    min-height: 100vh !important;
+  }
+  
+  body.archan-page::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+      radial-gradient(circle at 20% 80%, rgba(100, 149, 237, 0.1) 0%, transparent 50%),
+      radial-gradient(circle at 80% 20%, rgba(30, 144, 255, 0.1) 0%, transparent 50%),
+      radial-gradient(circle at 40% 40%, rgba(100, 149, 237, 0.05) 0%, transparent 50%);
+    z-index: -1;
+    pointer-events: none;
+  }
+  
+  body.archan-page .section-content,
+  body.archan-page .main-title,
+  body.archan-page .section-title {
+    color: rgba(255, 255, 255, 0.95) !important;
+  }
+  
+  body.archan-page .section-content p,
+  body.archan-page .section-content li {
+    color: rgba(255, 255, 255, 0.8) !important;
+  }
+</style>
+
 <style>
   .archan-theme {
     background: linear-gradient(135deg, rgba(10, 10, 40, 0.3) 0%, rgba(25, 25, 112, 0.15) 100%);
