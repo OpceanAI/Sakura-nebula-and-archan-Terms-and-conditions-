@@ -1,0 +1,316 @@
+---
+import LegalLayout from '../../layouts/LegalLayout.astro';
+import LanguageSwitcher from '../../components/LanguageSwitcher.astro';
+import LegalSection from '../../components/LegalSection.astro';
+
+const currentLang = 'es';
+---
+
+<LegalLayout 
+  title="Términos y Condiciones - NEBULA BOT" 
+  description="Términos y Condiciones específicos para NEBULA BOT - Bot Multi-Función Principal con funcionalidades avanzadas."
+  lang={currentLang}
+>
+  <header class="header nebula-theme">
+    <div class="container">
+      <div class="header-content">
+        <h1 class="main-title">
+          <span class="bot-icon">🌙✨</span>
+          NEBULA BOT
+          <span class="subtitle">Términos y Condiciones</span>
+        </h1>
+        <div class="header-actions">
+          <a href="/" class="back-button">← Volver al inicio</a>
+          <LanguageSwitcher currentLang={currentLang} />
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <div class="container">
+      <!-- Introduction Section -->
+      <LegalSection 
+        title="1. Acerca de NEBULA BOT"
+        id="about-nebula"
+      >
+        <div class="bot-intro">
+          <p>Hola... 🌙✨ Soy <strong>NEBULA BOT</strong>, el bot operacional principal con funcionalidades avanzadas y un estilo kawaii tímido. Me encargo de mantener tu servidor funcionando perfectamente con un toque de encanto celestial.</p>
+          
+          <p>Estos términos cubren el uso de mis servicios de música, moderación, gestión de servidores y sistemas de tickets.</p>
+        </div>
+      </LegalSection>
+
+      <!-- Bot Capabilities -->
+      <LegalSection 
+        title="2. Funcionalidades Principales"
+        id="capabilities"
+      >
+        <h3>2.1 Sistema de Música Avanzado</h3>
+        <ul>
+          <li><strong>Nodos Lavalink Europeos:</strong> Optimizados para baja latencia en Europa</li>
+          <li><strong>Múltiples fuentes:</strong> YouTube, Spotify, SoundCloud</li>
+          <li><strong>Calidad de audio:</strong> Transmisión de alta fidelidad</li>
+          <li><strong>Controles avanzados:</strong> Colas, repetición, mezcla y más</li>
+        </ul>
+
+        <h3>2.2 Sistema de Moderación Inteligente</h3>
+        <ul>
+          <li><strong>Automoderación:</strong> Filtrado automático de contenido inapropiado</li>
+          <li><strong>Gestión de roles:</strong> Sistema avanzado de permisos y jerarquías</li>
+          <li><strong>Acciones disciplinarias:</strong> Warnings, timeouts, kicks y bans</li>
+          <li><strong>Logs detallados:</strong> Registro completo de actividades del servidor</li>
+        </ul>
+
+        <h3>2.3 Gestión de Servidor</h3>
+        <ul>
+          <li><strong>Sistema de tickets:</strong> Soporte organizado para usuarios</li>
+          <li><strong>Mensajes de bienvenida/despedida:</strong> Personalización completa</li>
+          <li><strong>Actividad del servidor:</strong> Tracking y estadísticas detalladas</li>
+          <li><strong>Configuración flexible:</strong> Adaptable a las necesidades de cada servidor</li>
+        </ul>
+      </LegalSection>
+
+      <!-- Music Services -->
+      <LegalSection 
+        title="3. Servicios de Música"
+        id="music-services"
+      >
+        <h3>3.1 Infraestructura Lavalink Europea</h3>
+        <p>Para ofrecerte la mejor experiencia musical en Europa, utilizo estos nodos optimizados:</p>
+        <ul>
+          <li><strong>Luke.gg:</strong> Nodo principal de alta disponibilidad</li>
+          <li><strong>AjieDev V4/All:</strong> Nodo de respaldo versátil</li>
+          <li><strong>Pericsq Romania:</strong> Servidor en Europa del Este</li>
+          <li><strong>Embotic France:</strong> Nodo francés de alta velocidad</li>
+        </ul>
+
+        <h3>3.2 Fuentes de Contenido Musical</h3>
+        <ul>
+          <li><strong>YouTube:</strong> Biblioteca completa de contenido público</li>
+          <li><strong>Spotify:</strong> Integración para búsqueda y metadatos (reproducción vía YouTube)</li>
+          <li><strong>SoundCloud:</strong> Música independiente y contenido Creative Commons</li>
+        </ul>
+
+        <h3>3.3 Funciones de Reproducción</h3>
+        <ul>
+          <li><strong>Cola de reproducción:</strong> Gestión inteligente de listas</li>
+          <li><strong>Controles de audio:</strong> Volumen, pausa, salto, repetición</li>
+          <li><strong>Filtros de audio:</strong> Efectos y ecualizadores</li>
+          <li><strong>Búsqueda avanzada:</strong> Encuentros rápidos y precisos</li>
+        </ul>
+      </LegalSection>
+
+      <!-- Moderation System -->
+      <LegalSection 
+        title="4. Sistema de Moderación"
+        id="moderation-system"
+      >
+        <h3>4.1 Automoderación Inteligente</h3>
+        <ul>
+          <li><strong>Filtros de spam:</strong> Detección automática de mensajes repetitivos</li>
+          <li><strong>Filtro de palabras:</strong> Lista personalizable de términos prohibidos</li>
+          <li><strong>Anti-flood:</strong> Prevención de inundación de mensajes</li>
+          <li><strong>Detección de enlaces:</strong> Control de URLs externas</li>
+        </ul>
+
+        <h3>4.2 Acciones de Moderación</h3>
+        <p>Como moderador, puedo realizar las siguientes acciones:</p>
+        <ul>
+          <li><strong>Advertencias (Warnings):</strong> Notificaciones por infracciones menores</li>
+          <li><strong>Timeouts:</strong> Suspensión temporal de privilegios de escritura</li>
+          <li><strong>Kicks:</strong> Expulsión temporal del servidor</li>
+          <li><strong>Bans:</strong> Prohibición permanente o temporal</li>
+          <li><strong>Purge:</strong> Eliminación masiva de mensajes</li>
+        </ul>
+
+        <h3>4.3 Sistema de Logs</h3>
+        <ul>
+          <li>Registro de todas las acciones de moderación</li>
+          <li>Logs de entrada y salida de miembros</li>
+          <li>Seguimiento de cambios de roles y permisos</li>
+          <li>Historial de infracciones por usuario</li>
+        </ul>
+      </LegalSection>
+
+      <!-- Technical Configuration -->
+      <LegalSection 
+        title="5. Configuración Técnica"
+        id="technical-config"
+      >
+        <h3>5.1 Framework y Base de Datos</h3>
+        <ul>
+          <li><strong>Node.js con TypeScript:</strong> Rendimiento y tipado estricto</li>
+          <li><strong>MongoDB:</strong> Base de datos para configuraciones y logs</li>
+          <li><strong>Discord OAuth2:</strong> Autenticación segura</li>
+          <li><strong>Sin dashboard web:</strong> Operación simplificada vía comandos</li>
+        </ul>
+
+        <h3>5.2 Limitaciones de Rendimiento</h3>
+        <ul>
+          <li><strong>Cooldowns inteligentes:</strong> Prevención de spam de comandos</li>
+          <li><strong>Gestión de memoria:</strong> Optimización automática de recursos</li>
+          <li><strong>Balanceeo de carga:</strong> Distribución eficiente entre nodos</li>
+          <li><strong>Respuestas truncadas:</strong> Límite de 2000 caracteres de Discord</li>
+        </ul>
+      </LegalSection>
+
+      <!-- Ticket System -->
+      <LegalSection 
+        title="6. Sistema de Tickets"
+        id="ticket-system"
+      >
+        <h3>6.1 Funcionalidad de Tickets</h3>
+        <ul>
+          <li><strong>Creación automática:</strong> Canales privados para soporte</li>
+          <li><strong>Categorización:</strong> Diferentes tipos de consultas</li>
+          <li><strong>Historial completo:</strong> Registro de todas las conversaciones</li>
+          <li><strong>Gestión de permisos:</strong> Acceso controlado por roles</li>
+        </ul>
+
+        <h3>6.2 Tipos de Tickets Disponibles</h3>
+        <ul>
+          <li>Soporte técnico y problemas del bot</li>
+          <li>Consultas sobre moderación</li>
+          <li>Reportes de usuarios problemáticos</li>
+          <li>Sugerencias y mejoras</li>
+        </ul>
+      </LegalSection>
+
+      <!-- Data Management -->
+      <LegalSection 
+        title="7. Gestión de Datos"
+        id="data-management"
+      >
+        <h3>7.1 Datos Almacenados</h3>
+        <ul>
+          <li><strong>Configuraciones del servidor:</strong> Preferencias de moderación y música</li>
+          <li><strong>Logs de moderación:</strong> Historial de acciones disciplinarias</li>
+          <li><strong>Estadísticas de uso:</strong> Métricas de rendimiento y actividad</li>
+          <li><strong>Colas de música:</strong> Listas de reproducción temporales</li>
+        </ul>
+
+        <h3>7.2 Retención de Datos</h3>
+        <ul>
+          <li>Logs de moderación: 90 días por defecto</li>
+          <li>Configuraciones: Hasta que el bot sea removido del servidor</li>
+          <li>Estadísticas: Agregadas y anonimizadas</li>
+          <li>Colas de música: Eliminadas al finalizar la sesión</li>
+        </ul>
+      </LegalSection>
+
+      <!-- Limitations -->
+      <LegalSection 
+        title="8. Limitaciones y Responsabilidades"
+        id="limitations"
+      >
+        <h3>8.1 Disponibilidad del Servicio de Música</h3>
+        <ul>
+          <li>La música depende de servicios externos (YouTube, Spotify, SoundCloud)</li>
+          <li>Algunos contenidos pueden no estar disponibles por restricciones geográficas</li>
+          <li>La calidad de audio depende de la fuente original</li>
+          <li>Interrupciones temporales por mantenimiento de nodos Lavalink</li>
+        </ul>
+
+        <h3>8.2 Moderación Automática</h3>
+        <ul>
+          <li>Los sistemas pueden generar falsos positivos ocasionales</li>
+          <li>La configuración debe ajustarse según las necesidades del servidor</li>
+          <li>Algunos contenidos problemáticos pueden no ser detectados automáticamente</li>
+          <li>Se recomienda supervisión humana complementaria</li>
+        </ul>
+      </LegalSection>
+
+      <!-- Contact -->
+      <LegalSection 
+        title="9. Soporte y Configuración"
+        id="support"
+      >
+        <div class="contact-info nebula-contact">
+          <h3>9.1 Configuración Inicial</h3>
+          <p>Para configurarme correctamente en tu servidor:</p>
+          <ul>
+            <li><strong>Permisos necesarios:</strong> Administrador o permisos específicos de moderación</li>
+            <li><strong>Canales requeridos:</strong> Logs, música y tickets</li>
+            <li><strong>Roles de staff:</strong> Configuración de jerarquías</li>
+          </ul>
+
+          <h3>9.2 Obtener Ayuda</h3>
+          <ul>
+            <li><strong>Sistema de tickets:</strong> Crear un ticket para soporte personalizado</li>
+            <li><strong>Comandos de ayuda:</strong> Lista completa de funcionalidades</li>
+            <li><strong>Configuración guiada:</strong> Asistencia paso a paso</li>
+          </ul>
+        </div>
+      </LegalSection>
+
+      <!-- Footer -->
+      <footer class="legal-footer nebula-footer">
+        <div class="footer-content">
+          <p><strong>NEBULA BOT</strong> 🌙✨ - Bot Multi-Función Principal</p>
+          <p>Funcionalidades avanzadas con estilo kawaii tímido ♡</p>
+          <p>Última actualización: 22 de agosto de 2025</p>
+        </div>
+      </footer>
+    </div>
+  </main>
+</LegalLayout>
+
+<style>
+  .nebula-theme {
+    background: linear-gradient(135deg, rgba(221, 160, 221, 0.1) 0%, rgba(177, 156, 217, 0.05) 100%);
+    border-bottom: 2px solid rgba(221, 160, 221, 0.3);
+  }
+
+  .bot-icon {
+    font-size: 1.5em;
+    margin-right: 0.5rem;
+  }
+
+  .header-actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .back-button {
+    padding: 0.5rem 1rem;
+    background: rgba(221, 160, 221, 0.2);
+    border: 1px solid rgba(221, 160, 221, 0.4);
+    border-radius: 20px;
+    color: var(--text-primary);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+  }
+
+  .back-button:hover {
+    background: rgba(221, 160, 221, 0.3);
+    transform: translateY(-2px);
+  }
+
+  .bot-intro {
+    background: linear-gradient(135deg, rgba(221, 160, 221, 0.1), rgba(177, 156, 217, 0.05));
+    padding: 2rem;
+    border-radius: 16px;
+    border: 1px solid rgba(221, 160, 221, 0.2);
+    margin-bottom: 2rem;
+  }
+
+  .nebula-contact {
+    background: linear-gradient(135deg, rgba(221, 160, 221, 0.1), rgba(177, 156, 217, 0.05));
+    border: 1px solid rgba(221, 160, 221, 0.2);
+  }
+
+  .nebula-footer {
+    background: linear-gradient(135deg, rgba(221, 160, 221, 0.1), rgba(177, 156, 217, 0.05));
+    border-top: 2px solid rgba(221, 160, 221, 0.3);
+  }
+
+  @media (max-width: 768px) {
+    .header-actions {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  }
+</style>

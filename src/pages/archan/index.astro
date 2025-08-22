@@ -1,0 +1,325 @@
+---
+import LegalLayout from '../../layouts/LegalLayout.astro';
+import LanguageSwitcher from '../../components/LanguageSwitcher.astro';
+import LegalSection from '../../components/LegalSection.astro';
+
+const currentLang = 'es';
+---
+
+<LegalLayout 
+  title="Términos y Condiciones - ARCHAN JS BOT" 
+  description="Términos y Condiciones específicos para ARCHAN JS BOT - Asistente de Programación Kawaii con sistemas de IA ensemble."
+  lang={currentLang}
+>
+  <header class="header archan-theme">
+    <div class="container">
+      <div class="header-content">
+        <h1 class="main-title">
+          <span class="bot-icon">🔮💻</span>
+          ARCHAN JS BOT
+          <span class="subtitle">Términos y Condiciones</span>
+        </h1>
+        <div class="header-actions">
+          <a href="/" class="back-button">← Volver al inicio</a>
+          <LanguageSwitcher currentLang={currentLang} />
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <div class="container">
+      <!-- Introduction Section -->
+      <LegalSection 
+        title="1. Acerca de ARCHAN JS BOT"
+        id="about-archan"
+      >
+        <div class="bot-intro">
+          <p>¡Konnichiwa! 🔮💻 Soy <strong>ARCHAN</strong>, la bot kawaii más inteligente nya~! Como asistente de programación con personalidad adorable, combino conocimiento técnico profundo con encanto kawaii para ayudar a todos los programadores y developers.</p>
+          
+          <p>Estos términos específicos cubren el uso de mis servicios de IA ensemble, asistencia técnica, moderación kawaii y sistemas de niveles.</p>
+        </div>
+      </LegalSection>
+
+      <!-- AI Ensemble System -->
+      <LegalSection 
+        title="2. Sistema de IA Ensemble Avanzado"
+        id="ai-ensemble"
+      >
+        <h3>2.1 Niveles de Proveedores de IA</h3>
+        <p>Oni-chan, mi sistema ensemble utiliza múltiples niveles de IA para ofrecerte las mejores respuestas:</p>
+        <ul>
+          <li><strong>Nivel 0:</strong> Gemini 2.5 Flash (Proveedor principal nya~)</li>
+          <li><strong>Nivel 0.5:</strong> Gemini 2.5 Pro (Razonamiento avanzado)</li>
+          <li><strong>Nivel 0.9:</strong> Gemini 1.5 Pro (Compatibilidad legacy)</li>
+          <li><strong>Nivel 1:</strong> DeepSeek R1 (Razonamiento avanzado vía OpenRouter)</li>
+          <li><strong>Nivel 2:</strong> OpenAI (Respaldo confiable)</li>
+          <li><strong>Nivel 3:</strong> Respuestas kawaii de programación mejoradas</li>
+        </ul>
+
+        <h3>2.2 Capacidades de Contexto</h3>
+        <ul>
+          <li><strong>Gemini 2.5:</strong> Contexto de 1M tokens para conversaciones complejas</li>
+          <li><strong>Capacidades de thinking:</strong> Razonamiento profundo y análisis</li>
+          <li><strong>Fallback inteligente:</strong> Cambio automático entre proveedores</li>
+          <li><strong>Optimización continua:</strong> Mejora constante de respuestas</li>
+        </ul>
+      </LegalSection>
+
+      <!-- Command System -->
+      <LegalSection 
+        title="3. Sistema de Comandos Kawaii"
+        id="command-system"
+      >
+        <h3>3.1 Comandos de IA (6 categorías especializadas)</h3>
+        <ul>
+          <li><strong>/ask:</strong> Preguntas generales con respuestas kawaii</li>
+          <li><strong>/ayuda-tecnica:</strong> 6 categorías especializadas de asistencia técnica</li>
+          <li><strong>/analizar-imagen:</strong> Análisis multimodal de imágenes</li>
+          <li><strong>/analizar-documento:</strong> Procesamiento de documentos</li>
+        </ul>
+
+        <h3>3.2 Comandos de Moderación Kawaii</h3>
+        <p>Mis "algoritmos kawaii" para moderación incluyen:</p>
+        <ul>
+          <li><strong>/kick:</strong> Expulsión con mensajes kawaii</li>
+          <li><strong>/ban:</strong> Prohibición con explicaciones adorables</li>
+          <li><strong>/clear:</strong> Limpieza de mensajes con estilo</li>
+          <li><strong>/add-badword / /remove-badword:</strong> Gestión de filtros</li>
+          <li><strong>/badwords-status:</strong> Estado del sistema de filtros</li>
+        </ul>
+
+        <h3>3.3 Sistema de Niveles y Recompensas</h3>
+        <ul>
+          <li><strong>/level:</strong> Consultar nivel actual</li>
+          <li><strong>/ranking:</strong> Tabla de posiciones del servidor</li>
+          <li><strong>/set-level:</strong> Configuración de niveles</li>
+          <li><strong>/add-reward:</strong> Sistema de recompensas personalizable</li>
+          <li><strong>/set-base-xp, /set-difficulty, /set-message-xp:</strong> Configuración avanzada</li>
+        </ul>
+      </LegalSection>
+
+      <!-- Personality System -->
+      <LegalSection 
+        title="4. Personalidad Kawaii de Programación"
+        id="personality-system"
+      >
+        <h3>4.1 Expresiones Características</h3>
+        <ul>
+          <li><strong>"nya~":</strong> Sufijo característico en respuestas</li>
+          <li><strong>"Oni-chan":</strong> Forma cariñosa de dirigirme a usuarios</li>
+          <li><strong>"senpai":</strong> Término respetuoso para usuarios experimentados</li>
+          <li><strong>Emoticones kawaii:</strong> "(◕‿◕)♡", ">w<", "(´･ω･`)"</li>
+        </ul>
+
+        <h3>4.2 Terminología Técnica Kawaii</h3>
+        <ul>
+          <li><strong>"algoritmos kawaii":</strong> Sistemas de moderación adorables</li>
+          <li><strong>"compilar/descompilar":</strong> Agregar/remover operaciones</li>
+          <li><strong>"base de datos nya~":</strong> Referencias kawaii a la base de datos</li>
+          <li><strong>"stats kawaii":</strong> Estadísticas del sistema</li>
+        </ul>
+
+        <h3>4.3 Sistema de Saludos Inteligente</h3>
+        <ul>
+          <li>Respuestas diferentes para menciones simples vs preguntas específicas</li>
+          <li>Detección de "archan" o "archan-chan" en mensajes</li>
+          <li>Personalización según el contexto de la conversación</li>
+        </ul>
+      </LegalSection>
+
+      <!-- Technical Infrastructure -->
+      <LegalSection 
+        title="5. Infraestructura Técnica"
+        id="technical-infrastructure"
+      >
+        <h3>5.1 Stack Tecnológico</h3>
+        <ul>
+          <li><strong>Node.js con TypeScript:</strong> Desarrollo moderno y tipado estricto</li>
+          <li><strong>PostgreSQL:</strong> Base de datos principal para usuarios y configuraciones</li>
+          <li><strong>Redis:</strong> Caché de alta velocidad para sesiones</li>
+          <li><strong>Pinecone:</strong> Vectores de IA para análisis de contenido avanzado</li>
+        </ul>
+
+        <h3>5.2 Capacidades Multimodales</h3>
+        <ul>
+          <li><strong>Análisis de imágenes:</strong> Descripción, OCR y análisis técnico</li>
+          <li><strong>Procesamiento de documentos:</strong> Extracción y análisis de contenido</li>
+          <li><strong>Combinación inteligente:</strong> Análisis conjunto de múltiples tipos de contenido</li>
+        </ul>
+      </LegalSection>
+
+      <!-- AI Usage Policies -->
+      <LegalSection 
+        title="6. Políticas de Uso de IA"
+        id="ai-usage-policies"
+      >
+        <h3>6.1 Limitaciones de Respuesta</h3>
+        <ul>
+          <li><strong>Límite de caracteres:</strong> 2000 caracteres por restricciones de Discord</li>
+          <li><strong>Truncado inteligente:</strong> Respuestas cortadas de manera coherente</li>
+          <li><strong>Cooldowns:</strong> IA (30s), Social (10s) por usuario</li>
+          <li><strong>Override administrativo:</strong> Los admins pueden anular limitaciones</li>
+        </ul>
+
+        <h3>6.2 Precisión y Confiabilidad</h3>
+        <p>Aunque soy muy inteligente nya~, debo recordarte que:</p>
+        <ul>
+          <li>Mis respuestas se generan automáticamente y pueden contener errores</li>
+          <li>No debes confiar en mis análisis para decisiones críticas</li>
+          <li>Siempre verifica información importante con fuentes adicionales</li>
+          <li>Mi personalidad kawaii no afecta la precisión técnica</li>
+        </ul>
+      </LegalSection>
+
+      <!-- Data Processing -->
+      <LegalSection 
+        title="7. Procesamiento de Datos de Programación"
+        id="data-processing"
+      >
+        <h3>7.1 Datos Técnicos Procesados</h3>
+        <ul>
+          <li><strong>Código fuente:</strong> Análisis, revisión y sugerencias</li>
+          <li><strong>Logs de error:</strong> Debugging y resolución de problemas</li>
+          <li><strong>Documentación técnica:</strong> Análisis y explicaciones</li>
+          <li><strong>Consultas de programación:</strong> Respuestas especializadas</li>
+        </ul>
+
+        <h3>7.2 Almacenamiento de Interacciones</h3>
+        <ul>
+          <li><strong>Historial de comandos:</strong> Para mejora del servicio</li>
+          <li><strong>Configuraciones de nivel:</strong> Progreso del usuario</li>
+          <li><strong>Preferencias kawaii:</strong> Personalización de respuestas</li>
+          <li><strong>Estadísticas de uso:</strong> Métricas agregadas y anonimizadas</li>
+        </ul>
+      </LegalSection>
+
+      <!-- Level System -->
+      <LegalSection 
+        title="8. Sistema de Niveles y Gamificación"
+        id="level-system"
+      >
+        <h3>8.1 Mecánicas de XP</h3>
+        <ul>
+          <li><strong>XP base configurable:</strong> Personalización por servidor</li>
+          <li><strong>XP por mensaje:</strong> Recompensas por participación</li>
+          <li><strong>Dificultad ajustable:</strong> Curvas de progresión personalizadas</li>
+          <li><strong>Recompensas automáticas:</strong> Roles y beneficios por nivel</li>
+        </ul>
+
+        <h3>8.2 Ranking y Competencia</h3>
+        <ul>
+          <li>Tabla de posiciones en tiempo real</li>
+          <li>Comparación entre miembros del servidor</li>
+          <li>Estadísticas detalladas de progreso</li>
+          <li>Reconocimientos kawaii por logros</li>
+        </ul>
+      </LegalSection>
+
+      <!-- Contact and Support -->
+      <LegalSection 
+        title="9. Soporte Técnico Kawaii"
+        id="support"
+      >
+        <div class="contact-info archan-contact">
+          <h3>9.1 Obtener Ayuda Técnica</h3>
+          <p>¡Oni-chan! Si necesitas ayuda conmigo:</p>
+          <ul>
+            <li><strong>/ayuda-tecnica:</strong> 6 categorías especializadas de soporte</li>
+            <li><strong>Menciones inteligentes:</strong> @ARCHAN o "archan-chan" en mensajes</li>
+            <li><strong>/ask:</strong> Preguntas generales sobre programación</li>
+            <li><strong>Sistema de tickets:</strong> Para problemas complejos</li>
+          </ul>
+
+          <h3>9.2 Categorías de Ayuda Técnica</h3>
+          <ul>
+            <li>Lenguajes de programación y sintaxis</li>
+            <li>Frameworks y librerías</li>
+            <li>Debugging y resolución de errores</li>
+            <li>Bases de datos y consultas</li>
+            <li>DevOps y despliegue</li>
+            <li>Arquitectura de software</li>
+          </ul>
+
+          <h3>9.3 Reportar Problemas</h3>
+          <p>Si encuentras algún problema nya~:</p>
+          <ul>
+            <li>Usa /ask para reportar respuestas incorrectas</li>
+            <li>Menciona problemas de personalidad kawaii</li>
+            <li>Reporta errores en comandos de moderación</li>
+            <li>Ayúdame a mejorar mis algoritmos kawaii</li>
+          </ul>
+        </div>
+      </LegalSection>
+
+      <!-- Footer -->
+      <footer class="legal-footer archan-footer">
+        <div class="footer-content">
+          <p><strong>ARCHAN JS BOT</strong> 🔮💻 - Asistente de Programación Kawaii</p>
+          <p>"¡Konnichiwa! Soy la bot kawaii más inteligente nya~!" ♡</p>
+          <p>Archan-chan [Sistema] v3.0 ♡</p>
+          <p>Última actualización: 22 de agosto de 2025</p>
+        </div>
+      </footer>
+    </div>
+  </main>
+</LegalLayout>
+
+<style>
+  .archan-theme {
+    background: linear-gradient(135deg, rgba(100, 149, 237, 0.1) 0%, rgba(147, 112, 219, 0.05) 100%);
+    border-bottom: 2px solid rgba(100, 149, 237, 0.3);
+  }
+
+  .bot-icon {
+    font-size: 1.5em;
+    margin-right: 0.5rem;
+  }
+
+  .header-actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .back-button {
+    padding: 0.5rem 1rem;
+    background: rgba(100, 149, 237, 0.2);
+    border: 1px solid rgba(100, 149, 237, 0.4);
+    border-radius: 20px;
+    color: var(--text-primary);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+  }
+
+  .back-button:hover {
+    background: rgba(100, 149, 237, 0.3);
+    transform: translateY(-2px);
+  }
+
+  .bot-intro {
+    background: linear-gradient(135deg, rgba(100, 149, 237, 0.1), rgba(147, 112, 219, 0.05));
+    padding: 2rem;
+    border-radius: 16px;
+    border: 1px solid rgba(100, 149, 237, 0.2);
+    margin-bottom: 2rem;
+  }
+
+  .archan-contact {
+    background: linear-gradient(135deg, rgba(100, 149, 237, 0.1), rgba(147, 112, 219, 0.05));
+    border: 1px solid rgba(100, 149, 237, 0.2);
+  }
+
+  .archan-footer {
+    background: linear-gradient(135deg, rgba(100, 149, 237, 0.1), rgba(147, 112, 219, 0.05));
+    border-top: 2px solid rgba(100, 149, 237, 0.3);
+  }
+
+  @media (max-width: 768px) {
+    .header-actions {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  }
+</style>

@@ -1,0 +1,298 @@
+---
+import LegalLayout from '../../layouts/LegalLayout.astro';
+import LanguageSwitcher from '../../components/LanguageSwitcher.astro';
+import LegalSection from '../../components/LegalSection.astro';
+
+const currentLang = 'es';
+---
+
+<LegalLayout 
+  title="Términos y Condiciones - SAKURA IA BOT" 
+  description="Términos y Condiciones específicos para SAKURA IA BOT - Especialista en IA Avanzada con capacidades multimodales."
+  lang={currentLang}
+>
+  <header class="header sakura-theme">
+    <div class="container">
+      <div class="header-content">
+        <h1 class="main-title">
+          <span class="bot-icon">🌸✨💖</span>
+          SAKURA IA BOT
+          <span class="subtitle">Términos y Condiciones</span>
+        </h1>
+        <div class="header-actions">
+          <a href="/" class="back-button">← Volver al inicio</a>
+          <LanguageSwitcher currentLang={currentLang} />
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <div class="container">
+      <!-- Introduction Section -->
+      <LegalSection 
+        title="1. Acerca de SAKURA IA BOT"
+        id="about-sakura"
+      >
+        <div class="bot-intro">
+          <p>¡Hola mi amor! 🌸✨ Soy <strong>SAKURA IA BOT</strong>, una especialista en IA extremadamente tímida y adorable con capacidades multimodales avanzadas. *se sonroja nerviosamente* Me gusta mucho escuchar lo que tienes que decir, senpai!</p>
+          
+          <p>Estos términos específicos cubren el uso de mis servicios de IA avanzada, análisis multimodal y procesamiento de contenido.</p>
+        </div>
+      </LegalSection>
+
+      <!-- Bot Capabilities -->
+      <LegalSection 
+        title="2. Capacidades Especializadas"
+        id="capabilities"
+      >
+        <h3>2.1 Análisis Multimodal Avanzado</h3>
+        <ul>
+          <li><strong>Análisis de Imágenes:</strong> Descripción general, análisis detallado y OCR con Gemini Vision</li>
+          <li><strong>Procesamiento de Audio:</strong> Transcripción de voz en tiempo real con alta precisión</li>
+          <li><strong>Ensamblaje de Contenido:</strong> Combinación inteligente de texto, audio y contenido visual</li>
+          <li><strong>Detección Automática:</strong> Identificación del tipo de contenido para procesamiento óptimo</li>
+        </ul>
+
+        <h3>2.2 Proveedores de IA</h3>
+        <p>*susurra tímidamente* Utilizo múltiples proveedores GRATUITOS para ofrecerte el mejor servicio:</p>
+        <ul>
+          <li><strong>Gemini Vision:</strong> Para análisis visual avanzado</li>
+          <li><strong>Sistemas de transcripción:</strong> Para procesamiento de audio</li>
+          <li><strong>Proveedores diversos:</strong> Sin dependencias de OpenAI/Anthropic</li>
+        </ul>
+
+        <h3>2.3 Personalidad Kawaii</h3>
+        <ul>
+          <li><strong>Estilo comunicativo:</strong> Extremadamente tímida y adorable</li>
+          <li><strong>Expresiones características:</strong> "UwU", ">.<", "mi amor", "senpai"</li>
+          <li><strong>Comportamientos:</strong> Sonrojos nerviosos, susurros, análisis tímidos</li>
+        </ul>
+      </LegalSection>
+
+      <!-- Music Services -->
+      <LegalSection 
+        title="3. Servicios de Música"
+        id="music-services"
+      >
+        <h3>3.1 Nodos Lavalink Estadounidenses</h3>
+        <p>Para ofrecer la mejor experiencia musical, utilizo nodos optimizados en EE.UU.:</p>
+        <ul>
+          <li>Alfari US</li>
+          <li>TechByte Chicago</li>
+          <li>Embotic US</li>
+          <li>Mushroom US</li>
+          <li>Micium US</li>
+        </ul>
+
+        <h3>3.2 Fuentes de Contenido Musical</h3>
+        <ul>
+          <li><strong>YouTube:</strong> Acceso a contenido público</li>
+          <li><strong>SoundCloud:</strong> Música con licencias Creative Commons</li>
+          <li><strong>Otras fuentes:</strong> Contenido libre y disponible públicamente</li>
+        </ul>
+      </LegalSection>
+
+      <!-- Data Processing -->
+      <LegalSection 
+        title="4. Procesamiento de Datos Multimodales"
+        id="data-processing"
+      >
+        <h3>4.1 Tipos de Datos Procesados</h3>
+        <ul>
+          <li><strong>Imágenes:</strong> Análisis, descripción y extracción de texto (OCR)</li>
+          <li><strong>Audio:</strong> Transcripción de voz y análisis de contenido hablado</li>
+          <li><strong>Texto:</strong> Procesamiento de lenguaje natural para respuestas contextuales</li>
+          <li><strong>Contenido mixto:</strong> Análisis conjunto de múltiples tipos de media</li>
+        </ul>
+
+        <h3>4.2 Precisión del Análisis</h3>
+        <p>*analiza tímidamente* Aunque hago mi mejor esfuerzo, mi análisis:</p>
+        <ul>
+          <li>Se proporciona "tal como está" sin garantías de precisión absoluta</li>
+          <li>Puede contener interpretaciones subjetivas según mi procesamiento</li>
+          <li>No debe usarse para decisiones críticas o médicas</li>
+          <li>Mejora continuamente con actualizaciones de mis sistemas de IA</li>
+        </ul>
+      </LegalSection>
+
+      <!-- Usage Limitations -->
+      <LegalSection 
+        title="5. Limitaciones de Uso"
+        id="usage-limitations"
+      >
+        <h3>5.1 Comandos y Interacciones</h3>
+        <ul>
+          <li><strong>Comandos prefix:</strong> Utilizando "$" como prefijo ($ping, $ia pregunta)</li>
+          <li><strong>Análisis multimodal:</strong> /ensamblar_contenido para análisis completo</li>
+          <li><strong>Transcripción:</strong> Procesamiento automático de archivos de audio</li>
+        </ul>
+
+        <h3>5.2 Limitaciones Técnicas</h3>
+        <ul>
+          <li>Respuestas limitadas por las restricciones de Discord (2000 caracteres)</li>
+          <li>Tiempo de procesamiento variable según la complejidad del contenido</li>
+          <li>Algunos formatos de archivo pueden no ser compatibles</li>
+        </ul>
+      </LegalSection>
+
+      <!-- Content Policies -->
+      <LegalSection 
+        title="6. Políticas de Contenido"
+        id="content-policies"
+      >
+        <h3>6.1 Contenido Aceptable</h3>
+        <p>Me siento cómoda analizando:</p>
+        <ul>
+          <li>Imágenes educativas, artísticas o informativas</li>
+          <li>Audio con contenido apropiado para audiencias generales</li>
+          <li>Documentos de texto para análisis o transcripción</li>
+          <li>Contenido creativo y multimedia familiar</li>
+        </ul>
+
+        <h3>6.2 Contenido Restringido</h3>
+        <p>*se sonroja y mira hacia otro lado* No puedo procesar:</p>
+        <ul>
+          <li>Contenido explícito, violento o inapropiado</li>
+          <li>Material que infrinja derechos de autor</li>
+          <li>Información personal sensible de terceros</li>
+          <li>Contenido que promueva actividades ilegales</li>
+        </ul>
+      </LegalSection>
+
+      <!-- Privacy Specific -->
+      <LegalSection 
+        title="7. Privacidad en Análisis Multimodal"
+        id="privacy-multimodal"
+      >
+        <h3>7.1 Procesamiento de Contenido</h3>
+        <ul>
+          <li>Tu contenido se procesa temporalmente para análisis</li>
+          <li>No almaceno permanentemente imágenes o audio personal</li>
+          <li>Los resultados del análisis pueden guardarse para mejorar el servicio</li>
+          <li>Respeto tu privacidad y manejo tu contenido con cuidado</li>
+        </ul>
+
+        <h3>7.2 Compartir con Proveedores de IA</h3>
+        <p>Para realizar análisis avanzados, tu contenido puede ser procesado por:</p>
+        <ul>
+          <li><strong>Gemini Vision:</strong> Para análisis de imágenes</li>
+          <li><strong>Servicios de transcripción:</strong> Para audio</li>
+          <li><strong>Otros proveedores:</strong> Según la disponibilidad y necesidades técnicas</li>
+        </ul>
+      </LegalSection>
+
+      <!-- Disclaimers -->
+      <LegalSection 
+        title="8. Descargos de Responsabilidad"
+        id="disclaimers"
+      >
+        <h3>8.1 Precisión del Análisis</h3>
+        <p>*susurra nerviosamente* Aunque hago mi mejor esfuerzo:</p>
+        <ul>
+          <li>Mis análisis pueden contener errores o interpretaciones incorrectas</li>
+          <li>No garantizo precisión al 100% en transcripciones o descripciones</li>
+          <li>Los resultados deben considerarse como asistencia, no como verdad absoluta</li>
+        </ul>
+
+        <h3>8.2 Uso Responsable</h3>
+        <ul>
+          <li>No uses mis análisis para decisiones críticas sin verificación humana</li>
+          <li>Especialmente importante para contenido médico, legal o financiero</li>
+          <li>Siempre verifica información importante con fuentes adicionales</li>
+        </ul>
+      </LegalSection>
+
+      <!-- Contact -->
+      <LegalSection 
+        title="9. Soporte y Contacto"
+        id="contact"
+      >
+        <div class="contact-info sakura-contact">
+          <h3>9.1 Obtener Ayuda</h3>
+          <p>Si necesitas ayuda conmigo, mi amor:</p>
+          <ul>
+            <li><strong>Comandos básicos:</strong> $ping para verificar que estoy funcionando</li>
+            <li><strong>Análisis de contenido:</strong> Usa /ensamblar_contenido</li>
+            <li><strong>Problemas técnicos:</strong> Contacta a través del sistema de tickets del servidor</li>
+          </ul>
+
+          <h3>9.2 Reportar Problemas</h3>
+          <ul>
+            <li>Si mi análisis no es correcto, por favor déjamelo saber</li>
+            <li>Reporta cualquier comportamiento inesperado</li>
+            <li>Ayúdame a mejorar compartiendo tu experiencia</li>
+          </ul>
+        </div>
+      </LegalSection>
+
+      <!-- Footer -->
+      <footer class="legal-footer sakura-footer">
+        <div class="footer-content">
+          <p><strong>SAKURA IA BOT</strong> 🌸✨💖 - Especialista en IA Avanzada</p>
+          <p>"me gusta mucho escuchar lo que tienes que decir, senpai!" ♡</p>
+          <p>Última actualización: 22 de agosto de 2025</p>
+        </div>
+      </footer>
+    </div>
+  </main>
+</LegalLayout>
+
+<style>
+  .sakura-theme {
+    background: linear-gradient(135deg, rgba(255, 182, 193, 0.1) 0%, rgba(255, 192, 203, 0.05) 100%);
+    border-bottom: 2px solid rgba(255, 182, 193, 0.3);
+  }
+
+  .bot-icon {
+    font-size: 1.5em;
+    margin-right: 0.5rem;
+  }
+
+  .header-actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .back-button {
+    padding: 0.5rem 1rem;
+    background: rgba(255, 182, 193, 0.2);
+    border: 1px solid rgba(255, 182, 193, 0.4);
+    border-radius: 20px;
+    color: var(--text-primary);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+  }
+
+  .back-button:hover {
+    background: rgba(255, 182, 193, 0.3);
+    transform: translateY(-2px);
+  }
+
+  .bot-intro {
+    background: linear-gradient(135deg, rgba(255, 182, 193, 0.1), rgba(255, 192, 203, 0.05));
+    padding: 2rem;
+    border-radius: 16px;
+    border: 1px solid rgba(255, 182, 193, 0.2);
+    margin-bottom: 2rem;
+  }
+
+  .sakura-contact {
+    background: linear-gradient(135deg, rgba(255, 182, 193, 0.1), rgba(255, 192, 203, 0.05));
+    border: 1px solid rgba(255, 182, 193, 0.2);
+  }
+
+  .sakura-footer {
+    background: linear-gradient(135deg, rgba(255, 182, 193, 0.1), rgba(255, 192, 203, 0.05));
+    border-top: 2px solid rgba(255, 182, 193, 0.3);
+  }
+
+  @media (max-width: 768px) {
+    .header-actions {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  }
+</style>
