@@ -16,7 +16,7 @@ const currentLang = 'es';
     <div class="container">
       <div class="header-content">
         <h1 class="main-title">
-          <span class="bot-icon">🔮💻</span>
+          <img src="/images/bots/archan.jpg" alt="Archan Bot" class="bot-avatar" />
           ARCHAN JS BOT
           <span class="subtitle">Términos y Condiciones</span>
         </h1>
@@ -306,6 +306,23 @@ const currentLang = 'es';
   body.archan-page .section-content p,
   body.archan-page .section-content li {
     color: rgba(255, 255, 255, 0.8) !important;
+  }
+  
+  /* Bot Avatar Styles */
+  .bot-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 1rem;
+    border: 3px solid rgba(100, 149, 237, 0.6);
+    box-shadow: 0 0 20px rgba(100, 149, 237, 0.4);
+    transition: all 0.3s ease;
+  }
+  
+  .bot-avatar:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(100, 149, 237, 0.6);
   }
 </style>
 
