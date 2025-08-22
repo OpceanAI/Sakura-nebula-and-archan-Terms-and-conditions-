@@ -32,6 +32,11 @@
   --text-secondary: var(--gray-600);
   --text-muted: var(--gray-500);
   
+  /* Dark theme overrides for bot pages */
+  --text-primary-dark: rgba(255, 255, 255, 0.95);
+  --text-secondary-dark: rgba(255, 255, 255, 0.8);
+  --text-muted-dark: rgba(255, 255, 255, 0.6);
+  
   --border-soft: rgba(255, 182, 193, 0.3);
   --border-medium: rgba(255, 182, 193, 0.5);
   
@@ -109,38 +114,78 @@ body {
   padding: 0;
 }
 
-/* Bot-specific page backgrounds */
-html:has(body.sakura-page),
+/* Bot-specific page backgrounds - Same style as main page */
 body.sakura-page {
-  background: linear-gradient(135deg, 
-    #1a0a0d 0%, 
-    #2d1114 30%, 
-    #ffb6c1 70%, 
-    #ffc0cb 100%) !important;
-  background-attachment: fixed !important;
-  min-height: 100vh !important;
+  background: linear-gradient(135deg, #000000 0%, #330011 50%, #4d1a2e 100%) !important;
+  color: white !important;
+  overflow-x: hidden !important;
+  --text-primary: var(--text-primary-dark);
+  --text-secondary: var(--text-secondary-dark);
+  --text-muted: var(--text-muted-dark);
 }
 
-html:has(body.nebula-page),
 body.nebula-page {
-  background: linear-gradient(135deg, 
-    #1a0a1a 0%, 
-    #2d1a2d 30%, 
-    #dda0dd 70%, 
-    #b19cd9 100%) !important;
-  background-attachment: fixed !important;
-  min-height: 100vh !important;
+  background: linear-gradient(135deg, #000000 0%, #1a0033 50%, #2d1b69 100%) !important;
+  color: white !important;
+  overflow-x: hidden !important;
+  --text-primary: var(--text-primary-dark);
+  --text-secondary: var(--text-secondary-dark);
+  --text-muted: var(--text-muted-dark);
 }
 
-html:has(body.archan-page),
 body.archan-page {
-  background: linear-gradient(135deg, 
-    #050514 0%, 
-    #0a0a28 30%, 
-    #191970 70%, 
-    #6495ed 100%) !important;
-  background-attachment: fixed !important;
-  min-height: 100vh !important;
+  background: linear-gradient(135deg, #000000 0%, #000a33 50%, #1a2d69 100%) !important;
+  color: white !important;
+  overflow-x: hidden !important;
+  --text-primary: var(--text-primary-dark);
+  --text-secondary: var(--text-secondary-dark);
+  --text-muted: var(--text-muted-dark);
+}
+
+/* Add background overlay effects like main page */
+body.sakura-page::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(circle at 20% 80%, rgba(255, 182, 193, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(255, 105, 180, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 40% 40%, rgba(255, 182, 193, 0.05) 0%, transparent 50%);
+  z-index: -1;
+  pointer-events: none;
+}
+
+body.nebula-page::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(circle at 20% 80%, rgba(221, 160, 221, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(147, 112, 219, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 40% 40%, rgba(221, 160, 221, 0.05) 0%, transparent 50%);
+  z-index: -1;
+  pointer-events: none;
+}
+
+body.archan-page::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(circle at 20% 80%, rgba(100, 149, 237, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(30, 144, 255, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 40% 40%, rgba(100, 149, 237, 0.05) 0%, transparent 50%);
+  z-index: -1;
+  pointer-events: none;
 }
 
 /* ========================================
