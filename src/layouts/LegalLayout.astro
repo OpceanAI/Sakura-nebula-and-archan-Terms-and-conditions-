@@ -9,9 +9,6 @@ export interface Props {
 const { title, description, lang, bodyClass } = Astro.props;
 ---
 
-<style>
-  @import '@fontsource-variable/onest';
-</style>
 
 <!DOCTYPE html>
 <html lang={lang}>
@@ -45,6 +42,12 @@ const { title, description, lang, bodyClass } = Astro.props;
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <!-- Onest Variable Font -->
+  <link rel="preload" href="/node_modules/@fontsource-variable/onest/files/onest-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <style>
+    @import url('/node_modules/@fontsource-variable/onest/index.css');
+  </style>
   
   <!-- Preload Critical Resources -->
   <link rel="preload" href="/src/styles/global.css" as="style">
