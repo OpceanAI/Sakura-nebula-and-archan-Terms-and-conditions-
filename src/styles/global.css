@@ -241,10 +241,10 @@ body.archan-page::before {
    Header Styles
    ======================================== */
 .header {
-  background: var(--gradient-card);
-  backdrop-filter: blur(10px);
-  border-bottom: 1px solid var(--border-soft);
-  padding: var(--spacing-xl) 0;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 2.5rem 0;
   position: relative;
   overflow: hidden;
 }
@@ -265,18 +265,21 @@ body.archan-page::before {
   justify-content: space-between;
   align-items: center;
   gap: var(--spacing-lg);
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 2rem;
 }
 
 .main-title {
-  color: var(--text-primary);
-  font-size: clamp(2rem, 4vw, 3rem);
-  font-weight: 800;
-  letter-spacing: -0.02em;
+  color: rgba(255, 255, 255, 0.95);
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  font-weight: 700;
+  letter-spacing: -0.01em;
   line-height: 1.2;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: var(--spacing-sm);
+  align-items: center;
+  gap: 1rem;
+  font-family: 'Onest Variable', sans-serif;
 }
 
 .sakura-icon {
@@ -290,21 +293,94 @@ body.archan-page::before {
   50% { transform: translateY(-10px); }
 }
 
+.title-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.bot-name {
+  font-size: 1em;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.95);
+  line-height: 1;
+}
+
 .subtitle {
-  font-size: 0.5em;
+  font-size: 0.45em;
   font-weight: 500;
-  color: var(--text-secondary);
+  color: rgba(255, 255, 255, 0.7);
   font-style: italic;
+  margin-top: 0.2em;
+  line-height: 1;
+}
+
+/* Bot Avatar Styles para Header */
+.bot-avatar {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+}
+
+.bot-avatar:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 35px rgba(255, 255, 255, 0.4);
+}
+
+/* Header Actions Styles */
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.back-button {
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.9);
+  padding: 0.75rem 1.5rem;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+  font-family: 'Onest Variable', sans-serif;
+}
+
+.back-button:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.4);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
 }
 
 @media (max-width: 768px) {
   .header-content {
     flex-direction: column;
     text-align: center;
+    gap: 1.5rem;
+    padding: 0 1rem;
   }
   
   .main-title {
+    flex-direction: column;
     align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .bot-avatar {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .back-button {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.85rem;
   }
 }
 

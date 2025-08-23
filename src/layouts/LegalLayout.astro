@@ -44,9 +44,13 @@ const { title, description, lang, bodyClass } = Astro.props;
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   
   <!-- Onest Variable Font -->
-  <link rel="preload" href="/node_modules/@fontsource-variable/onest/files/onest-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
   <style>
-    @import url('/node_modules/@fontsource-variable/onest/index.css');
+    @import '@fontsource-variable/onest';
+    
+    /* Global font improvement */
+    * {
+      font-family: 'Onest Variable', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+    }
   </style>
   
   <!-- Preload Critical Resources -->

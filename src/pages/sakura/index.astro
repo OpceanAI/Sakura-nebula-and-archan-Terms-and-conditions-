@@ -14,8 +14,10 @@ import LegalSection from '../../components/LegalSection.astro';
       <div class="header-content">
         <h1 class="main-title">
           <img src="/images/bots/sakura.jpg" alt="Sakura Bot" class="bot-avatar" />
-          Sakura
-          <span class="subtitle">Términos y Condiciones</span>
+          <div class="title-text">
+            <span class="bot-name">Sakura</span>
+            <span class="subtitle">Términos y Condiciones</span>
+          </div>
         </h1>
         <div class="header-actions">
           <a href="/" class="back-button">← Volver al inicio</a>
@@ -271,21 +273,14 @@ import LegalSection from '../../components/LegalSection.astro';
     color: rgba(255, 255, 255, 0.8) !important;
   }
   
-  /* Bot Avatar Styles */
-  .bot-avatar {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-right: 1rem;
-    border: 3px solid rgba(255, 107, 157, 0.6);
-    box-shadow: 0 0 20px rgba(255, 107, 157, 0.4);
-    transition: all 0.3s ease;
+  /* Sakura specific avatar glow */
+  .sakura-page .bot-avatar {
+    border-color: rgba(255, 107, 157, 0.6);
+    box-shadow: 0 0 25px rgba(255, 107, 157, 0.4);
   }
   
-  .bot-avatar:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 30px rgba(255, 107, 157, 0.6);
+  .sakura-page .bot-avatar:hover {
+    box-shadow: 0 0 35px rgba(255, 107, 157, 0.6);
   }
 </style>
 
