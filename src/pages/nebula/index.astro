@@ -1,15 +1,12 @@
 ---
 import LegalLayout from '../../layouts/LegalLayout.astro';
-import LanguageSwitcher from '../../components/LanguageSwitcher.astro';
 import LegalSection from '../../components/LegalSection.astro';
-
-const currentLang = 'es';
 ---
 
 <LegalLayout 
   title="Términos y Condiciones - Nebula" 
   description="Términos y Condiciones específicos para Nebula del Proyecto Opcean Discord Bot - Bot Multi-Función Principal con funcionalidades avanzadas."
-  lang={currentLang}
+  lang="es"
   bodyClass="nebula-page"
 >
   <header class="header nebula-theme">
@@ -22,7 +19,6 @@ const currentLang = 'es';
         </h1>
         <div class="header-actions">
           <a href="/" class="back-button">← Volver al inicio</a>
-          <LanguageSwitcher currentLang={currentLang} />
         </div>
       </div>
     </div>
