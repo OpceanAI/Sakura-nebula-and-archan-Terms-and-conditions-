@@ -254,8 +254,8 @@ body.archan-page::before {
   }
 
   .bot-avatar {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
   }
 
   .title-text {
@@ -362,8 +362,8 @@ body.archan-page::before {
 
 /* Bot Avatar Styles para Header */
 .bot-avatar {
-  width: 55px;
-  height: 55px;
+  width: 45px;
+  height: 45px;
   border-radius: 50%;
   object-fit: cover;
   object-position: center;
