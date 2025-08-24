@@ -235,51 +235,6 @@ body.archan-page::before {
   .container {
     padding: 0 var(--spacing-md);
   }
-
-  .header {
-    padding: 1.5rem 0;
-  }
-
-  .header-content {
-    flex-direction: column;
-    text-align: center;
-    gap: 1rem;
-    padding: 0 1rem;
-  }
-
-  .main-title {
-    flex-direction: column;
-    text-align: center;
-    font-size: clamp(1.2rem, 5vw, 1.8rem);
-  }
-
-  .bot-avatar {
-    width: 40px;
-    height: 40px;
-  }
-
-  .title-text {
-    align-items: center;
-  }
-
-  .bot-name {
-    font-size: 1.2em;
-  }
-
-  .subtitle {
-    font-size: 0.8em;
-    margin-top: 0.3em;
-  }
-
-  .header-actions {
-    width: 100%;
-    justify-content: center;
-  }
-
-  .back-button {
-    font-size: 0.85rem;
-    padding: 0.4rem 0.8rem;
-  }
 }
 
 /* ========================================
@@ -362,8 +317,8 @@ body.archan-page::before {
 
 /* Bot Avatar Styles para Header */
 .bot-avatar {
-  width: 45px;
-  height: 45px;
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
   object-fit: cover;
   object-position: center;
