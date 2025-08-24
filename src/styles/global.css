@@ -321,6 +321,8 @@ body.archan-page::before {
   height: 70px;
   border-radius: 50%;
   object-fit: cover;
+  object-position: center;
+  aspect-ratio: 1/1;
   border: 3px solid rgba(255, 255, 255, 0.3);
   box-shadow: 0 0 25px rgba(255, 255, 255, 0.2);
   transition: all 0.3s ease;
